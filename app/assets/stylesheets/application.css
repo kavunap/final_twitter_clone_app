@@ -16,6 +16,8 @@
  .navbar {
     min-height: 38px;
     background-color: #f55e55;
+    height: 50px;
+    padding-top: 5px;
   }
   li{
     display: inline;

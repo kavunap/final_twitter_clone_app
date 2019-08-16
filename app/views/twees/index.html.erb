@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Twees</h1>
+<br><br><br><br>
+<h1>Tweets</h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= twee.content %></td>
         <td><%= twee.created_on %></td>
-        <td><%= link_to 'Show', twee %></td>
-        <td><%= link_to 'Edit', edit_twee_path(twee) %></td>
-        <td><%= link_to 'Destroy', twee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show detals', twee %></td>
+        <td><%= link_to 'Edit tweet', edit_twee_path(twee) %></td>
+        <td><%= link_to 'Delete tweet', twee, method: :delete, data: { confirm: 'Are you sure you want to delete this tweet?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Twee', new_twee_path %>
+<%= link_to 'New Tweet', new_twee_path %>
